@@ -12,9 +12,9 @@ customer-churn-data-warehouse/
 └── .gitignore
  
  
-### Configure your database
+### Database configuration
  
-### Run the full Python ETL pipeline
+### Full ETL pipleine
 
-## Star Schema
+## Develop a Star Schema
 
