@@ -1,5 +1,5 @@
-from _01extract_kaggle import df
-from _02transform_churn import classify_schema
+from __01extract_kaggle import df
+from __02transform_churn import classify_schema
 import os
 from sqlalchemy import create_engine, text
 

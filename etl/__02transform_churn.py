@@ -1,4 +1,4 @@
-from _01extract_kaggle  import df, get_schema
+from __01extract_kaggle  import df, get_schema
 
 def classify_schema(df):
     schema = get_schema(df)
