@@ -7,27 +7,27 @@ CREATE SCHEMA IF NOT EXISTS dw;
 
 CREATE TABLE dw.dim_customer (
   dim_customer_id SERIAL PRIMARY KEY,
-  customerid VARCHAR(255)
+  "CustomerID" VARCHAR(255)
 );
 
 CREATE TABLE dw.dim_gender (
   dim_gender_id SERIAL PRIMARY KEY,
-  gender VARCHAR(255)
+  "Gender" VARCHAR(255)
 );
 
 CREATE TABLE dw.dim_subscription_type (
   dim_subscription_type_id SERIAL PRIMARY KEY,
-  subscription_type VARCHAR(255)
+  "Subscription Type" VARCHAR(255)
 );
 
 CREATE TABLE dw.dim_contract_length (
   dim_contract_length_id SERIAL PRIMARY KEY,
-  contract_length VARCHAR(255)
+  "Contract Length" VARCHAR(255)
 );
 
 CREATE TABLE dw.dim_churn (
   dim_churn_id SERIAL PRIMARY KEY,
-  churn VARCHAR(255)
+  "Churn" VARCHAR(255)
 );
 
 CREATE TABLE dw.fact_churn (

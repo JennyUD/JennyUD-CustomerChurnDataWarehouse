@@ -1,5 +1,5 @@
-from extract_kaggle import df
-from transform_churn import classify_schema
+from _01extract_kaggle import df
+from _02transform_churn import classify_schema
 import os
 
 schema, dimensions, facts = classify_schema(df)
@@ -10,8 +10,7 @@ def generate_dimensional_sql(dim_name, cols):
     sql = f"CREATE TABLE dw.{dim_name} (\n"
     sql += f"  {dim_name}_id SERIAL PRIMARY KEY,\n"
     for col in cols:
-        col_clean = col.lower().replace(" ", "_")
-        sql += f"  {col_clean} VARCHAR(255),\n"
+        sql += f'  "{col}" VARCHAR(255),\n'   # <-- KEEP ORIGINAL NAME
     sql = sql.rstrip(",\n") + "\n);\n\n"
     return sql
 

@@ -1,4 +1,4 @@
-from extract_kaggle import df, get_schema
+from _01extract_kaggle  import df, get_schema
 
 def classify_schema(df):
     schema = get_schema(df)
@@ -23,7 +23,12 @@ def classify_schema(df):
     print("\n=== DIMENSIONS ===")
     print(dimensions)
 
+    print("\n=== SCHEMA ===")
+    print(schema)
+
     print("\n=== FACTS ===")
     print(facts)
 
     return schema, dimensions, facts
+
+classify_schema(df)
