@@ -34,6 +34,8 @@ def write_sql_file():
 
     with open(OUTPUT_PATH, "w") as f:
         f.write("-- 02_create_tables.sql (Auto-generated)\n\n")
+        f.write("-- Run this file with:\n")
+        f.write("-- psql -U postgres -d churn_dw -f sql/02_create_tables.sql\n\n")
         f.write(f"CREATE SCHEMA IF NOT EXISTS dw;\n\n")
 
 

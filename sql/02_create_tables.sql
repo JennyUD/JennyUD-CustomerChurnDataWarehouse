@@ -1,5 +1,8 @@
 -- 02_create_tables.sql (Auto-generated)
 
+-- Run this file with:
+-- psql -U postgres -d churn_dw -f sql/02_create_tables.sql
+
 CREATE SCHEMA IF NOT EXISTS dw;
 
 CREATE TABLE dw.dim_customer (
